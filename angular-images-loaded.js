@@ -1,6 +1,6 @@
 angular.module('angular-images-loaded', []);
 
-angular.module('angular-images-loaded').constant('imagesLoaded', imagesLoaded);
+angular.module('angular-images-loaded').constant('imagesLoaded', require('imagesloaded'));
 
 angular.module('angular-images-loaded').directive('imagesLoaded', ['$timeout', 'imagesLoaded',
     function($timeout, imagesLoaded) {
